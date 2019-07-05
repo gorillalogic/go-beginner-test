@@ -20,9 +20,9 @@ import (
 
 func TestDuplicates(t *testing.T) {
     origin := []byte {1,3,2,3,24,36,2,5,90,122,15,45,32,24}
-	expected := []byte {2,3,24}
+    expected := []byte {2,3,24}
 
-	result := Duplicates(origin)
+    result := Duplicates(origin)
 
     if !bytes.Equal(result, expected) {
        t.Errorf("Result was incorrect, got: %v, expected: %v.", result, expected)
